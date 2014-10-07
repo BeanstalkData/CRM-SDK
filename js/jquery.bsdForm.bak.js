@@ -1,4 +1,13 @@
-(function($) {
+// Utility
+if ( typeof Object.create !== 'function' ) {
+	Object.create = function(obj) {
+		function F() {};
+		F.prototype = obj;
+		return new F();
+	};
+}
+
+(function($, window, document, undefined) {
 	var obj = {},
 	buildFormFields = function(input, dropdown,checkbox, list, textarea, radio) {
 		if (input || textarea) {
@@ -92,4 +101,4 @@
 			alert(error);
 		}
 	}
-})(jQuery);
+})(jQuery, window, document);

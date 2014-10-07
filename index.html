@@ -6,23 +6,19 @@
 		<script type="text/javascript" src="js/jquery.bsdCreate.js"></script>
 	</head>
 	<body>
-		<!-- <div class=" divClass ">
-			<label for=" formLabel ">My Label</label>
-			<div>
-				<input type=" fieldType " id=" inputId " />
-			</div>
-		</div> -->
 		<form id="my-form"></form>
+
 		<script type="text/javascript">
+			
+			// First Name 
 			$('#my-form').bsdCreate('firstname');
+			
+			// Last Name
 			$('#my-form').bsdCreate({
 				fieldName: 'lastname',
 				divClass: 'okay',
 			});
-			// $('#my-form').bsdCreate('state');
-			// $('#my-form').bsdCreate('zipcode');
-			// $('#my-form').bsdCreate('telephone');
-			// $('#my-form').bsdCreate('customfield');
+
 		</script>
 	</body>
 </html>
